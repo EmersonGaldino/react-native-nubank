@@ -1,7 +1,7 @@
-import styled from "styled-compenents/native";
+import styled from "styled-components/native";
 
 export const Container = styled.View`
-  align-itens: center;
+  align-items: center;
   padding: 40px 0 30px;
 `;
 

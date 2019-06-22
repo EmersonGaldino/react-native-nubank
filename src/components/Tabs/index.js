@@ -1,16 +1,34 @@
 import React from "react";
+
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { Container, TabsContatiner, TabItem, TabText } from "./styles";
+
+import { Container, TabsContainer, TabItem, TabText } from "./styles";
 
 export default function Tabs() {
   return (
     <Container>
-      <TabsContatiner>
+      <TabsContainer>
         <TabItem>
           <Icon name="person-add" size={24} color="#FFF" />
           <TabText>Indicar Amigos</TabText>
         </TabItem>
-      </TabsContatiner>
+        <TabItem>
+          <Icon name="chat-bubble-outline" size={24} color="#FFF" />
+          <TabText>Cobrar</TabText>
+        </TabItem>
+        <TabItem>
+          <Icon name="arrow-downward" size={24} color="#FFF" />
+          <TabText>Depositar</TabText>
+        </TabItem>
+        <TabItem>
+          <Icon name="arrow-upward" size={24} color="#FFF" />
+          <TabText>Tranferir</TabText>
+        </TabItem>
+        <TabItem>
+          <Icon name="lock" size={24} color="#FFF" />
+          <TabText>Bloquear cartão</TabText>
+        </TabItem>
+      </TabsContainer>
     </Container>
   );
 }
